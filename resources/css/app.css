@@ -1,1 +1,216 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1{ 
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+h2{ 
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 15px;
+}
+
+h4{ 
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 4px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+span{
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+.logo{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 120px;
+    width: 100px;
+    display: flex;
+
+}
+form{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-left: 8%;
+    margin-bottom: 100px;    
+
+}
+
+
+.form-control-prod{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    width: 25%;
+}
+
+
+.form-control-custo{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    width: 30%;
+}
+
+.form-control-taxa{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    width: 22%;
+}
+
+.form-control-qtde{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    width: 20%;
+}
+.form-control-lucro{
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.375rem 0.75rem;
+    width: 22%;
+}
+
+/* Garantir que as colunas fiquem lado a lado */
+.row {
+    display: flex;
+    flex-wrap: wrap; /* permite quebrar em telas pequenas */
+    gap: 1rem;       /* espaçamento entre colunas */
+    margin-left: 0;
+    margin-right: 0;
+    padding-right:120px;
+    padding-left: 120px;
+    align-items: center;
+    text-align: center;
+}
+
+/* Cada coluna dentro da row */
+.col {
+    flex: 1 1 300px; /* cresce, encolhe, largura mínima de 300px */
+    min-width: 300px;
+    padding-right: 25px;
+  
+}
+
+.btn-calcular {
+    background-color: #0d6efd;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top:10px;
+}
+
+
+[x-cloak] {
+    display: none;
+}
+nav{
+    padding-top:6px;
+   padding-bottom:6px;
+}
+/* CSS customizado para x-nav-link e x-dropdown */
+.nav-link, .dropdown-toggle {
+    color: #0d6efd; /* azul do Bootstrap */
+}
+
+.nav-link.active, .dropdown-item.active {
+    font-weight: 600;
+    color: #0d6efd !important;
+}
+
+.dropdown-menu {
+    min-width: 12rem;
+}
+
+
+/* ----------- DASHBOARD CUSTOM STYLES ----------- */
+ .dashboard-title {
+        font-size: 1.4rem;
+    }
+
+/* Área da Dashboard */
+.dashboard-container {
+    padding: 2rem;
+    background: #f7f8fa;
+}
+
+/* Card principal */
+.dashboard-card {
+    background: white;
+    border-radius: 14px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+
+.dashboard-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+}
+
+/* Título da Dashboard */
+.dashboard-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+/* Bem-vindo */
+.welcome-box {
+    padding: 1.8rem;
+    border-left: 5px solid #2563eb;
+    background: #f0f7ff;
+    border-radius: 8px;
+}
+
+/* Rodapé dentro da dashboard */
+.dashboard-footer {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+/* Ajuste global */
+body {
+    background: #eef1f5 !important;
+}
+
+.logo{
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 110px;
+    width: 100px;
+    display: flex;
+}
+/* Responsividade */
+@media (max-width: 640px) {
+    .dashboard-card {
+        padding: 1.2rem;
+    }
+}
+
+
+
+
 
